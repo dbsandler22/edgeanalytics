@@ -787,10 +787,7 @@ a:hover {
     padding-bottom: 0 !important;
     -webkit-box-decoration-break: slice;
     box-decoration-break: slice;
-    text-decoration: underline;
-    text-decoration-color: #18cb96;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 2px;
+    text-decoration: none;
   }
 }
 
