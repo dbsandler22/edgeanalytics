@@ -386,6 +386,18 @@ a:hover {
   margin-right: auto;
 }
 
+.how-footnote a,
+.how-footnote a:visited {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 203, 150, 0.4);
+  text-underline-offset: 2px;
+}
+
+.how-footnote a:hover {
+  color: var(--accent-light);
+}
+
 .how-arrow {
   flex-shrink: 0;
   color: var(--accent);
