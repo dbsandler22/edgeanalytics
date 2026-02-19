@@ -97,6 +97,15 @@ a:hover {
   margin-left: 6px;
 }
 
+.logo-graph {
+  width: 28px;
+  height: 20px;
+  margin-left: 4px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
 .nav-powered {
   font-size: 0.65rem;
   font-weight: 600;
