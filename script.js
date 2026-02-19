@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetch(SHEET_URL, {
       method: 'POST',
+      mode: 'no-cors',
       body: JSON.stringify(entry),
     })
-    .then((response) => {
-      if (!response.ok) throw new Error('Request failed');
+    .then(() => {
       form.style.display = 'none';
       note.style.display = 'none';
       success.classList.add('show');
