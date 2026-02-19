@@ -402,7 +402,7 @@ a:hover {
   flex-shrink: 0;
   color: var(--accent);
   opacity: 0.4;
-  padding-top: 16px;
+  padding-top: 30px;
 }
 
 .how-arrow svg {
