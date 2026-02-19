@@ -401,6 +401,11 @@ a:hover {
   margin: 0 auto 48px;
 }
 
+.why-description-examples {
+  margin-top: -36px;
+  padding-top: 12px;
+}
+
 .why-description a,
 .why-description a:visited {
   color: var(--accent);
