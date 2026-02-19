@@ -377,7 +377,7 @@ a:hover {
 /* === Why Trainers Section === */
 .section-why {
   background: var(--gray-100);
-  padding: 80px 40px;
+  padding: 48px 40px 80px;
 }
 
 .why-label {
@@ -395,7 +395,7 @@ a:hover {
   line-height: 1.7;
   color: #555;
   text-align: center;
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto 48px;
 }
 
