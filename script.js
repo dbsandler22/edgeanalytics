@@ -22,23 +22,27 @@ document.addEventListener('DOMContentLoaded', () => {
       sport: data.get('sport') || 'not specified',
     };
 
+    const showSuccess = () => {
+      form.style.display = 'none';
+      if (note) note.style.display = 'none';
+      success.classList.add('show');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    const showError = () => {
+      form.style.display = 'none';
+      if (note) note.style.display = 'none';
+      error.classList.add('show');
+      error.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
     fetch(SHEET_URL, {
       method: 'POST',
       mode: 'no-cors',
       body: JSON.stringify(entry),
     })
-    .then(() => {
-      form.style.display = 'none';
-      note.style.display = 'none';
-      success.classList.add('show');
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    })
-    .catch(() => {
-      form.style.display = 'none';
-      note.style.display = 'none';
-      error.classList.add('show');
-      error.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
+    .then(showSuccess)
+    .catch(showError);
   });
 
   // Share functionality
