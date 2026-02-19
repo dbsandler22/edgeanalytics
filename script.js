@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
       form.style.display = 'none';
       note.style.display = 'none';
       success.classList.add('show');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
     })
     .catch(() => {
       form.style.display = 'none';
       note.style.display = 'none';
       error.classList.add('show');
+      error.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
 
