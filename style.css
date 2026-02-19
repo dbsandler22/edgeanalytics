@@ -427,16 +427,23 @@ a:hover {
   border: 1px solid #e0e0e0;
 }
 
+.why-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
 .why-icon {
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(24, 203, 150, 0.1);
   border: 1px solid rgba(24, 203, 150, 0.2);
   border-radius: 50%;
-  margin-bottom: 16px;
   color: var(--accent);
 }
 
@@ -449,7 +456,7 @@ a:hover {
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--dark);
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .why-card p {
