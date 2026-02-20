@@ -864,6 +864,12 @@ a:hover {
   .why-grid {
     grid-template-columns: 1fr;
   }
+
+  .how-cost-line {
+    border-radius: var(--radius-lg);
+    padding: 10px 16px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -885,6 +891,16 @@ a:hover {
 
   .why-card {
     padding: 24px;
+  }
+
+  .how-cost-line {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+
+  .how-cost-line svg {
+    width: 20px;
+    height: 20px;
   }
 
   .nav-portal {
