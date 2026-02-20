@@ -312,10 +312,12 @@ a:hover {
 }
 
 .how-cost-line svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   color: var(--accent);
   flex-shrink: 0;
+  position: relative;
+  top: 1px;
 }
 
 .how-steps {
