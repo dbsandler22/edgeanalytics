@@ -455,6 +455,14 @@ a:hover {
   border-radius: var(--radius-lg);
   padding: 32px;
   border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  cursor: default;
+}
+
+.why-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-color: rgba(24, 203, 150, 0.3);
 }
 
 .why-card-header {
