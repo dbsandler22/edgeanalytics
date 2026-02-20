@@ -301,10 +301,6 @@ a:hover {
 }
 
 .how-cost-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--white);
@@ -313,15 +309,17 @@ a:hover {
   border-radius: 30px;
   padding: 10px 24px;
   width: fit-content;
+  text-align: center;
 }
 
 .how-cost-line svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: var(--accent);
-  flex-shrink: 0;
+  vertical-align: middle;
   position: relative;
-  top: 1px;
+  top: -1px;
+  margin-right: 6px;
 }
 
 .how-steps {
@@ -868,7 +866,6 @@ a:hover {
   .how-cost-line {
     border-radius: var(--radius-lg);
     padding: 10px 16px;
-    text-align: center;
   }
 }
 
@@ -896,11 +893,7 @@ a:hover {
   .how-cost-line {
     font-size: 0.9rem;
     padding: 10px 14px;
-  }
-
-  .how-cost-line svg {
-    width: 20px;
-    height: 20px;
+    border-radius: var(--radius-lg);
   }
 
   .nav-portal {
