@@ -540,7 +540,7 @@ a.nav-portal:hover {
   grid-auto-rows: 1fr;
   gap: 32px;
   max-width: 900px;
-  margin: 64px auto 0;
+  margin: 48px auto 0;
 }
 
 .why-card {
