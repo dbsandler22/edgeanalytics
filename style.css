@@ -448,7 +448,7 @@ a.nav-portal:hover {
 /* === Why Trainers Section === */
 .section-why {
   background: var(--gray-100);
-  padding: 24px 40px 80px;
+  padding: 24px 40px 40px;
   margin-top: -24px;
 }
 
@@ -504,7 +504,7 @@ a.nav-portal:hover {
 }
 
 .why-now-text {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   font-size: 1.1rem;
   color: #444;
