@@ -486,6 +486,12 @@ a.nav-portal:hover {
   border-top: 1px solid #e0e0e0;
 }
 
+/* Higher specificity override — prevents .section padding from winning the cascade */
+.section.section-why {
+  padding: 100px 40px 16px;
+  margin-top: -24px;
+}
+
 .why-vsp-line a {
   color: var(--accent-muted);
   text-decoration: underline;
