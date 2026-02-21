@@ -511,6 +511,10 @@ a.nav-portal:hover {
   line-height: 1.8;
 }
 
+.why-now-kicker {
+  margin-top: 16px;
+}
+
 .why-description a,
 .why-description a:visited {
   color: var(--accent);
