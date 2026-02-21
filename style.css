@@ -448,7 +448,7 @@ a.nav-portal:hover {
 /* === Why Trainers Section === */
 .section-why {
   background: var(--gray-100);
-  padding: 24px 40px 40px;
+  padding: 24px 40px 16px;
   margin-top: -24px;
 }
 
