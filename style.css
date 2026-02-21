@@ -271,6 +271,17 @@ a.nav-portal:hover {
   line-height: 1.6;
 }
 
+.hero-dev-note a {
+  color: var(--accent-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 203, 150, 0.4);
+  text-underline-offset: 2px;
+}
+
+.hero-dev-note a:hover {
+  color: var(--accent);
+}
+
 /* === How It Works (black) === */
 .section-how {
   position: relative;
