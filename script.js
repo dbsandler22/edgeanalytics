@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: data.get('name'),
       email: data.get('email'),
       phone: data.get('phone') || 'not specified',
+      instagram: data.get('instagram') || 'not specified',
       athletes: data.get('athletes') || 'not specified',
       sport: data.get('sport') || 'not specified',
     };
