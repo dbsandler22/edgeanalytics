@@ -263,6 +263,14 @@ a.nav-portal:hover {
   line-height: 1.7;
 }
 
+.hero-dev-note {
+  font-size: 0.88rem;
+  color: #999;
+  max-width: 600px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+
 /* === How It Works (black) === */
 .section-how {
   position: relative;
@@ -455,6 +463,41 @@ a.nav-portal:hover {
 
 .why-description:last-of-type {
   margin-bottom: 48px;
+}
+
+.why-vsp-line {
+  text-align: center;
+  font-size: 0.88rem;
+  color: #888;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.why-vsp-line a {
+  color: var(--accent-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 203, 150, 0.35);
+  text-underline-offset: 2px;
+}
+
+.why-vsp-line a:hover {
+  color: var(--accent);
+}
+
+.section-why-now {
+  background: var(--white);
+  padding: 56px 24px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.why-now-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
 }
 
 .why-description a,
@@ -668,6 +711,14 @@ a.nav-portal:hover {
   margin-top: 8px;
 }
 
+.form-next-note {
+  font-size: 0.78rem;
+  color: #bbb;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.55;
+}
+
 .signup-error {
   display: none;
   max-width: 480px;
@@ -865,6 +916,22 @@ a.nav-portal:hover {
 .footer-copy {
   font-size: 0.8rem;
   color: var(--gray-500);
+}
+
+.footer-vsp {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.footer-vsp a {
+  color: var(--gray-300);
+  text-decoration: underline;
+  text-decoration-color: rgba(176, 176, 176, 0.4);
+  text-underline-offset: 2px;
+}
+
+.footer-vsp a:hover {
+  color: var(--white);
 }
 
 /* === Responsive === */
