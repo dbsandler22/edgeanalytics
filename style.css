@@ -1023,16 +1023,20 @@ a.nav-portal:hover {
   }
 
   .nav-right {
-    gap: 10px;
-  }
-
-  .nav-faq {
-    font-size: 0.7rem;
-    padding: 5px 10px;
+    gap: 6px;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .nav-portal {
+    order: 1;
     font-size: 0.65rem;
+  }
+
+  .nav-faq {
+    order: 2;
+    font-size: 0.7rem;
+    padding: 5px 10px;
   }
 
   .nav-portal svg {
