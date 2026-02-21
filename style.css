@@ -1014,13 +1014,30 @@ a.nav-portal:hover {
     border-radius: var(--radius-lg);
   }
 
-  .nav-portal {
+  .hero {
+    padding: 150px 20px 48px;
+  }
+
+  .faq-hero {
+    padding: 150px 20px 48px;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .nav-faq {
     font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .nav-portal {
+    font-size: 0.65rem;
   }
 
   .nav-portal svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 
   .logo-graph {
@@ -1212,7 +1229,7 @@ a.nav-portal:hover {
 
 @media (max-width: 640px) {
   .faq-hero {
-    padding: 100px 20px 48px;
+    padding: 150px 20px 48px;
   }
 
   .section-faq {
