@@ -1150,6 +1150,14 @@ a.nav-portal:hover {
     padding: 48px 20px;
   }
 
+  .how-steps-horiz {
+    flex-direction: column;
+  }
+
+  .how-horiz-arrow {
+    display: none;
+  }
+
   .section-cta {
     padding: 48px 20px 80px;
   }
