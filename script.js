@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const error = document.getElementById('signupError');
   const retryBtn = document.getElementById('retryBtn');
   const note = document.querySelector('.signup-note');
-  const SHEET_URL = '  https://script.google.com/macros/s/AKfycbyyTcsbwKpr-uUIkfBL4e_la_YMNp3lCMRMHFYAwXD4RKop6B1tB
-  TfHc25KbNso91eu7w/exec';
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyyTcsbwKpr-uUIkfBL4e_la_YMNp3lCMRMHFYAwXD4RKop6B1tBTfHc25KbNso91eu7w/exec';
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
