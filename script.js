@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Share functionality
-  const pageUrl = window.location.href;
+  const pageUrl = window.location.origin + window.location.pathname;
   const shareMessage = 'Check out Edge Athletics — a new youth sports analytics platform that helps trainers earn more. Get early access:';
 
   document.getElementById('shareCopy').addEventListener('click', () => {
