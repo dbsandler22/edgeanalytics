@@ -1895,7 +1895,7 @@ a.nav-portal:hover {
 
   .hero-inner {
     flex-direction: column;
-    gap: 36px;
+    gap: 24px;
     text-align: center;
   }
 
@@ -1913,6 +1913,10 @@ a.nav-portal:hover {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  .hero-phones-wrap {
+    padding-top: 16px;
   }
 }
 
