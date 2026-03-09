@@ -32,6 +32,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -2479,6 +2480,10 @@ a.nav-portal:hover {
     align-items: flex-start;
   }
   .dashboard-radar {
+    display: none;
+  }
+  .dashboard-pb-badge,
+  .dashboard-challenge-badge {
     display: none;
   }
 }
