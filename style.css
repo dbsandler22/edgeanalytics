@@ -1899,6 +1899,11 @@ a.nav-portal:hover {
     text-align: center;
   }
 
+  .hero-text {
+    flex: none;
+    width: 100%;
+  }
+
   .hero-sub,
   .hero-dev-note {
     max-width: none;
