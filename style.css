@@ -136,6 +136,23 @@ a:hover {
   gap: 20px;
 }
 
+.nav-cta {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--accent);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  letter-spacing: 0.04em;
+  transition: background 0.2s, opacity 0.2s;
+  white-space: nowrap;
+}
+
+.nav-cta:hover {
+  opacity: 0.88;
+}
+
 .nav-faq {
   font-size: 0.85rem;
   font-weight: 600;
@@ -405,8 +422,8 @@ a.nav-portal:hover {
 
 .what-edge-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 58fr 42fr;
+  gap: 64px;
   align-items: start;
 }
 
@@ -436,7 +453,7 @@ a.nav-portal:hover {
   font-size: 1.02rem;
   color: #555;
   text-align: left;
-  max-width: 62ch;
+  max-width: 620px;
   margin: 0 0 18px;
   line-height: 1.75;
 }
@@ -445,15 +462,33 @@ a.nav-portal:hover {
   margin-bottom: 0;
 }
 
+.what-edge-point {
+  margin-top: 26px;
+}
+
+.what-edge-point .what-edge-body {
+  margin-bottom: 0;
+}
+
+.what-edge-point-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+
 .what-edge-dimensions {
   margin-top: 32px;
-  max-width: 437px;
+  max-width: 470px;
 }
 
 .what-edge-dimensions img {
   width: 100%;
   height: auto;
   display: block;
+  filter: contrast(1.12) saturate(1.1);
 }
 
 .what-edge-cols {
@@ -528,6 +563,18 @@ a.nav-portal:hover {
   color: #888;
   line-height: 1.6;
   margin-top: 14px !important;
+}
+
+.what-edge-revenue-callout {
+  margin-top: 14px;
+  padding: 8px 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  line-height: 1.5;
+  background: rgba(24, 203, 150, 0.06);
+  border: 1px solid rgba(24, 203, 150, 0.22);
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -1018,8 +1065,36 @@ a.nav-portal:hover {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.how-step-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 40px;
+  flex-wrap: wrap;
+}
+
+.how-diagram-step {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.how-diagram-arrow {
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0.7;
+  flex-shrink: 0;
 }
 
 .how-cost-line {
@@ -1226,7 +1301,7 @@ a.nav-portal:hover {
 .mission-radar-wrap {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 516px;
 }
 
 .mission-radar-wrap::before {
@@ -1243,6 +1318,7 @@ a.nav-portal:hover {
   height: auto;
   display: block;
   position: relative;
+  filter: contrast(1.12) saturate(1.1);
 }
 
 .mission-overline {
@@ -1266,8 +1342,8 @@ a.nav-portal:hover {
 .mission-body {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.58);
-  max-width: 52ch;
-  margin: 0 0 18px;
+  max-width: 620px;
+  margin: 0 0 22px;
   line-height: 1.8;
 }
 
@@ -1948,6 +2024,29 @@ a.nav-portal:hover {
     padding: 100px 20px 48px;
   }
 
+  .nav-portal {
+    display: none;
+  }
+
+  .nav-cta {
+    font-size: 0.75rem;
+    padding: 7px 12px;
+  }
+
+  .how-step-diagram {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .how-diagram-arrow {
+    transform: rotate(90deg);
+  }
+
+  .how-diagram-step {
+    white-space: normal;
+    text-align: center;
+  }
+
   .section-how {
     padding: 48px 20px;
   }
@@ -1983,20 +2082,23 @@ a.nav-portal:hover {
   }
 
   .nav-right {
-    gap: 6px;
-    flex-direction: column;
-    align-items: flex-end;
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .nav-portal {
-    order: 1;
-    font-size: 0.65rem;
+    display: none;
   }
 
   .nav-faq {
-    order: 2;
     font-size: 0.7rem;
     padding: 5px 10px;
+  }
+
+  .nav-cta {
+    font-size: 0.75rem;
+    padding: 7px 12px;
   }
 
   .nav-portal svg {
