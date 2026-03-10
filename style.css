@@ -226,19 +226,21 @@ a.nav-portal:hover {
 .hero-inner {
   display: flex;
   align-items: center;
-  gap: 40px;
-  padding-left: clamp(32px, 7vw, 120px);
+  gap: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
 }
 
 .hero-text {
-  flex: 0 0 580px;
+  flex: 0 0 min(560px, 46%);
   min-width: 0;
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  font-size: clamp(2.0rem, 3.2vw, 2.8rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.03em;
   color: var(--dark);
   margin-bottom: 0;
@@ -274,6 +276,37 @@ a.nav-portal:hover {
   line-height: 1.7;
 }
 
+.hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-bullets li {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.hero-bullets li::before {
+  content: '✓';
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hero-bullets li:last-child {
+  color: #333;
+}
+
 .hero-cta-group {
   display: flex;
   flex-direction: column;
@@ -285,6 +318,31 @@ a.nav-portal:hover {
 .hero-cta-group .btn {
   width: 100%;
   text-align: center;
+}
+
+.btn-hero-secondary {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  background: transparent;
+  color: var(--dark);
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  border-radius: var(--radius);
+  padding: 14px 32px;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-hero-secondary:hover {
+  border-color: var(--dark);
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--dark);
 }
 
 .btn-ghost {
@@ -335,6 +393,109 @@ a.nav-portal:hover {
   color: var(--accent);
 }
 
+/* =============================================
+   WHAT EDGE IS
+   ============================================= */
+
+.section-what-edge {
+  background: #f8f9fb;
+  padding: 48px 24px 56px;
+  border-top: 1px solid #ebebeb;
+}
+
+.what-edge-overline {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+.what-edge-body {
+  font-size: 1.05rem;
+  color: #555;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 12px;
+  line-height: 1.7;
+}
+
+.what-edge-body:last-of-type {
+  margin-bottom: 40px;
+}
+
+.what-edge-cols {
+  display: flex;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.what-edge-col {
+  flex: 1;
+  background: var(--white);
+  border: 1px solid #e4e6ea;
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.what-edge-col:hover {
+  border-color: rgba(24, 203, 150, 0.4);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  transform: translateY(-3px);
+}
+
+.what-edge-col-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.what-edge-col-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.what-edge-col-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.what-edge-col-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin: 0;
+}
+
+.what-edge-col p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.what-edge-col p + p {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .what-edge-cols {
+    flex-direction: column;
+  }
+}
+
 /* Hero Visual — pre-composed phone mockup */
 .hero-visual {
   flex: 1;
@@ -344,6 +505,7 @@ a.nav-portal:hover {
 .hero-phones-wrap {
   position: relative;
   padding-top: 72px;
+  width: 100%;
 }
 
 .hero-phone-labels {
@@ -723,6 +885,7 @@ a.nav-portal:hover {
   background: var(--dark);
   padding: 48px 24px 48px;
   overflow: hidden;
+  scroll-margin-top: 72px;
 }
 
 .section-how-bg {
@@ -779,7 +942,7 @@ a.nav-portal:hover {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent);
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -894,7 +1057,7 @@ a.nav-portal:hover {
   letter-spacing: 0.12em;
   color: var(--accent);
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -923,7 +1086,7 @@ a.nav-portal:hover {
 
 /* Higher specificity override — prevents .section padding from winning the cascade */
 .section.section-why {
-  padding: 100px 40px 16px;
+  padding: 48px 40px 16px;
   margin-top: -24px;
 }
 
@@ -955,6 +1118,70 @@ a.nav-portal:hover {
 
 .why-now-kicker {
   margin-top: 16px;
+}
+
+/* =============================================
+   MISSION: WHY WE BUILT EDGE
+   ============================================= */
+
+.section-mission {
+  background: #0c0f16;
+  padding: 48px 24px 88px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mission-overline {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+
+.mission-headline {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.mission-body {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.58);
+  max-width: 660px;
+  margin: 0 auto 36px;
+  line-height: 1.8;
+}
+
+.mission-bullets {
+  list-style: none;
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.mission-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.mission-bullets li::before {
+  content: '✓';
+  color: var(--accent);
+  flex-shrink: 0;
+  font-weight: 700;
+  margin-top: 1px;
 }
 
 .why-description a,
@@ -2118,17 +2345,17 @@ a.nav-portal:hover {
 }
 
 .dashboard-overline {
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
   color: var(--accent);
   text-align: center;
   margin: 0 0 12px;
 }
 
 .section-dashboard-title {
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
   font-weight: 800;
   color: var(--dark);
   text-align: center;
