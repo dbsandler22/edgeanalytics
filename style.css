@@ -65,6 +65,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #e0e0e0;
+  padding-top: env(safe-area-inset-top, 0px);
 }
 
 .nav-inner {
@@ -2021,7 +2022,7 @@ a.nav-portal:hover {
 
 @media (max-width: 640px) {
   .hero {
-    padding: 100px 20px 48px;
+    padding: 124px 20px 48px;
   }
 
   .nav-portal {
@@ -2324,7 +2325,7 @@ a.nav-portal:hover {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 110px 24px 60px;
+    padding: 134px 24px 60px;
   }
 
   .hero-inner {
