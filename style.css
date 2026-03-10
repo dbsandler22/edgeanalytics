@@ -879,6 +879,34 @@ a.nav-portal:hover {
 }
 
 
+/* === Why This Matters === */
+.section-why-matters {
+  background: var(--white);
+  padding: 48px 24px 56px;
+  border-top: 1px solid #ebebeb;
+}
+
+.why-matters-overline {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 28px;
+}
+
+.why-matters-body {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 680px;
+  margin: 0 auto 18px;
+  line-height: 1.75;
+}
+
+.why-matters-body:last-child {
+  margin-bottom: 0;
+}
+
 /* === How It Works (black) === */
 .section-how {
   position: relative;
