@@ -2228,7 +2228,7 @@ a.nav-portal:hover {
   .hero-inner {
     flex-direction: column;
     gap: 24px;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-text {
@@ -2242,7 +2242,7 @@ a.nav-portal:hover {
   }
 
   .hero-cta-group {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero-visual {
