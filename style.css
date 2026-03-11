@@ -249,17 +249,35 @@ a.nav-portal:hover {
 }
 
 .hero-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: min(560px, 46%) 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 48px;
+  row-gap: 0;
   align-items: center;
-  gap: 48px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 clamp(24px, 4vw, 64px);
 }
 
-.hero-text {
-  flex: 0 0 min(560px, 46%);
+.hero-text-top {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
   min-width: 0;
+}
+
+.hero-text-bottom {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  min-width: 0;
+}
+
+.hero-visual {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
 }
 
 .hero h1 {
@@ -276,13 +294,7 @@ a.nav-portal:hover {
 }
 
 .hand-underline {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 30' preserveAspectRatio='none'%3E%3Cpath d='M3,18 C18,14 42,20 78,15 C114,10 138,19 180,14 C222,9 258,18 306,13 C354,8 390,17 432,12 C468,8 504,16 540,12 C564,9 582,14 597,11' fill='none' stroke='%2318cb96' stroke-width='14' stroke-linecap='round' opacity='0.8'/%3E%3Cpath d='M6,16 C30,12 66,19 108,13 C150,8 186,17 234,12 C282,7 318,16 366,11 C408,7 444,15 486,10 C522,7 558,13 594,10' fill='none' stroke='%2318cb96' stroke-width='10' stroke-linecap='round' opacity='0.5'/%3E%3Cpath d='M1,19 C36,15 72,21 120,16 C168,11 210,18 264,14 C318,10 360,17 414,13 C462,9 498,15 546,12 C576,10 588,13 599,12' fill='none' stroke='%2318cb96' stroke-width='8' stroke-linecap='round' opacity='0.35'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100% 14px;
-  padding-bottom: 18px;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  color: var(--accent);
 }
 
 .hero-micro {
@@ -2299,14 +2311,6 @@ a.nav-portal:hover {
     height: 14px;
   }
 
-  .hand-underline {
-    background-image: none !important;
-    background-size: 0 !important;
-    padding-bottom: 0 !important;
-    -webkit-box-decoration-break: slice;
-    box-decoration-break: slice;
-    text-decoration: none;
-  }
 }
 
 /* === FAQ Page === */
@@ -2505,8 +2509,8 @@ a.nav-portal:hover {
    ============================================= */
 
 @media (max-width: 900px) {
-  .hero-visual {
-    flex: 0 0 300px;
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2516,14 +2520,29 @@ a.nav-portal:hover {
   }
 
   .hero-inner {
+    display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
     text-align: left;
   }
 
-  .hero-text {
-    flex: none;
+  .hero-text-top {
     width: 100%;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .hero-text-bottom {
+    width: 100%;
+    order: 3;
+    margin-top: 24px;
   }
 
   .hero-sub,
@@ -2533,13 +2552,6 @@ a.nav-portal:hover {
 
   .hero-cta-group {
     align-items: flex-start;
-  }
-
-  .hero-visual {
-    flex: none;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
   }
 
   .hero-phones-wrap {
