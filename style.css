@@ -1689,6 +1689,12 @@ a.nav-portal:hover {
   margin: 0;
 }
 
+.edge-score-term {
+  font-weight: 700;
+  color: var(--white);
+  white-space: nowrap;
+}
+
 .how-vsp-credit {
   margin-top: 30px;
 }
