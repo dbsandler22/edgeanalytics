@@ -313,9 +313,16 @@ a.nav-portal:hover {
   line-height: 1.7;
 }
 
+.hero-sport-line {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 14px 0 0;
+}
+
 .hero-bullets {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 12px;
   margin: 18px 0 0;
   display: flex;
   flex-direction: column;
@@ -1550,7 +1557,7 @@ a.nav-portal:hover {
 
 .why-icon {
   width: 48px;
-  height: 72px;
+  height: 48px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -2076,13 +2083,17 @@ a.nav-portal:hover {
   text-align: center;
 }
 
+.footer .logo-img {
+  height: 180px;
+}
+
 .footer-inner {
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 
 .footer-text {
@@ -3043,6 +3054,7 @@ a.nav-portal:hover {
   letter-spacing: 0.18em;
   color: var(--accent);
   margin: 0 0 10px;
+  text-align: center;
 }
 
 .challenge-strip {
