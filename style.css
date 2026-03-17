@@ -1703,40 +1703,41 @@ a.nav-portal:hover {
 }
 
 .how-vsp-credit {
-  margin-top: 30px;
+  margin-top: 52px;
 }
 
 .how-vsp-divider {
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  margin: 0 0 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 0 0 18px;
 }
 
 .how-vsp-text {
   text-align: center;
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.4);
   margin: 0;
   letter-spacing: 0.01em;
 }
 
 .how-vsp-text a {
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.5);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .how-revenue-pill {
   display: block;
-  margin: 18px auto 0;
-  max-width: 680px;
+  margin: 20px auto 0;
+  max-width: 640px;
   text-align: center;
-  font-size: 0.82rem;
-  color: rgba(24,203,150,0.9);
-  background: rgba(24,203,150,0.08);
-  border: 1px solid rgba(24,203,150,0.2);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(24,203,150,0.82);
+  background: rgba(24,203,150,0.05);
+  border: 1px solid rgba(24,203,150,0.14);
   border-radius: 24px;
-  padding: 12px 22px;
+  padding: 11px 20px;
   line-height: 1.5;
 }
 
