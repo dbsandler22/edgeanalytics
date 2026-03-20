@@ -1604,7 +1604,7 @@ a.nav-portal:hover {
 .how-steps-horiz {
   display: flex;
   align-items: stretch;
-  max-width: 1100px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -1615,7 +1615,7 @@ a.nav-portal:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 28px 16px 22px;
+  padding: 28px 20px 22px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: var(--radius-lg);
@@ -1633,7 +1633,7 @@ a.nav-portal:hover {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  padding: 0 6px;
+  padding: 0 10px;
   color: var(--accent);
   opacity: 0.7;
 }
