@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works | Edge Athletics</title>
+  <meta name="description" content="How Edge Athletics works for families and trainers — step-by-step flows for athletes, parents, and coaches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-left" style="text-decoration:none;">
+        <div class="logo"><span class="logo-brand">edge</span><span class="logo-athletics">athletics</span><svg class="logo-graph" viewBox="0 0 50 35" fill="none"><polyline points="5,28 17,18 29,20 41,7" stroke="#18cb96" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5" cy="28" r="3" fill="#fff" stroke="#18cb96" stroke-width="2.5"/><circle cx="17" cy="18" r="3" fill="#fff" stroke="#18cb96" stroke-width="2.5"/><circle cx="29" cy="20" r="3" fill="#fff" stroke="#18cb96" stroke-width="2.5"/><circle cx="41" cy="7" r="3.5" fill="#18cb96" stroke="#18cb96" stroke-width="2.5"/></svg></div>
+        <span class="nav-powered">Youth Sports Analytics</span>
+        <span class="nav-powered-by">Powered by <a href="https://vsptraining.com/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Victory Sports Performance</a></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="families.html">Families</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="assessments.html">Assessments</a></li>
+        <li><a href="dashboards.html">Dashboards</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq-new.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="families.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile-menu" id="navMobileMenu">
+    <a href="families.html">Families</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="assessments.html">Assessments (Long Island)</a>
+    <a href="dashboards.html">Dashboards</a>
+    <a href="resources.html">Resources</a>
+    <a href="faq-new.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="families.html#waitlist" class="nav-cta-mobile">Join Waitlist</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="page-hero-eyebrow">How It Works</p>
+      <h1>Simple by design.<br><span class="highlight">Powerful by data.</span></h1>
+      <p class="page-hero-sub">See the step-by-step flow for families and trainers. Toggle between them below.</p>
+    </div>
+  </header>
+
+  <!-- TOGGLE + FLOWS -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="how-toggle-bar">
+        <button class="how-toggle-btn active" data-flow="flow-family">Family Flow</button>
+        <button class="how-toggle-btn" data-flow="flow-trainer">Trainer Flow</button>
+      </div>
+
+      <!-- FAMILY FLOW -->
+      <div class="how-flow active" id="flow-family">
+        <div class="how-flow-step">
+          <div class="how-flow-num">01</div>
+          <div class="how-flow-body">
+            <h3>Join or get invited</h3>
+            <p>Create your account on the Edge Athletics app, or join via an invite code from your trainer or coach. Getting started takes a few minutes.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">02</div>
+          <div class="how-flow-body">
+            <h3>Log workouts and benchmarks</h3>
+            <p>Track your training sessions and record performance benchmarks across six athletic dimensions: strength, speed, agility, power, endurance, and recovery. The more you log, the more accurate your Edge Score becomes.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">03</div>
+          <div class="how-flow-body">
+            <h3>See your Edge Score and dimension breakdown</h3>
+            <p>Your Edge Score updates as you train. Dive into the breakdown to see where you are strongest and where you have the most room to grow. Progress is tracked over time so you can see the arc of your development.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">04</div>
+          <div class="how-flow-body">
+            <h3>Engage with contextual leaderboards</h3>
+            <p>Compare your progress against relevant peers &mdash; filtered by age group, sport, team, or geography. The goal is to motivate progress, not create ranking pressure. Leaderboards are opt-in and contextual.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">05</div>
+          <div class="how-flow-body">
+            <h3>Certify your benchmarks <span class="how-flow-optional">Optional &mdash; Long Island</span></h3>
+            <p>Athletes near Long Island can visit Victory Sports Performance in Northport, NY for an official, coach-verified assessment. Certified benchmarks are marked distinctly in the app and carry greater accuracy weight in your Edge Score.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRAINER FLOW -->
+      <div class="how-flow" id="flow-trainer">
+        <div class="how-flow-step">
+          <div class="how-flow-num">01</div>
+          <div class="how-flow-body">
+            <h3>Express interest and get onboarded</h3>
+            <p>Fill out the trainer interest form. Early partners receive priority setup and a dedicated onboarding walkthrough before the general launch. We will walk you through everything you need to know.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">02</div>
+          <div class="how-flow-body">
+            <h3>Set up your roster</h3>
+            <p>Receive your unique trainer code. Athletes join the platform and register with your code &mdash; linking them to your dashboard so you can see their progress, engagement, and active status in one place.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">03</div>
+          <div class="how-flow-body">
+            <h3>Assign programming and track progress</h3>
+            <p>Athletes follow foundational athletic programs inside the app. You can see who is completing sessions, tracking benchmarks, and progressing across dimensions &mdash; visibility that extends far beyond your in-person hours.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">04</div>
+          <div class="how-flow-body">
+            <h3>Share progress data with parents</h3>
+            <p>Your dashboard gives you shareable, objective progress reports. Use them in parent conversations to demonstrate your coaching impact with real data &mdash; not just anecdotes. Builds trust. Drives retention.</p>
+          </div>
+        </div>
+        <div class="how-flow-step">
+          <div class="how-flow-num">05</div>
+          <div class="how-flow-body">
+            <h3>Earn ongoing compensation</h3>
+            <p>After an athlete's first full month of active participation, you receive $1.99 per active athlete per month. This is not a one-time bonus &mdash; it recurs as long as athletes stay active. This compensates you for implementing Edge and actively supporting athlete engagement over time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="cta-strip-inner">
+        <div class="cta-strip-panel">
+          <p class="cta-strip-panel-eyebrow">For Families</p>
+          <h3>Ready to get started?</h3>
+          <p>Join the waitlist for early access when Edge Athletics launches for families.</p>
+          <a href="families.html#waitlist" class="btn btn-primary btn-sm">Join the Waitlist</a>
+        </div>
+        <div class="cta-strip-panel">
+          <p class="cta-strip-panel-eyebrow">For Trainers</p>
+          <h3>Want early partner access?</h3>
+          <p>Express your interest and get priority onboarding when we launch.</p>
+          <a href="trainers.html#trainer-form" class="btn btn-ghost btn-sm">Trainer Interest Form</a>
+        </div>
+        <div class="cta-strip-panel">
+          <p class="cta-strip-panel-eyebrow">Questions?</p>
+          <h3>Still have questions?</h3>
+          <p>Check our FAQ for answers to the most common questions from families and trainers.</p>
+          <a href="faq-new.html" class="btn btn-outline-dark btn-sm">Read the FAQ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="text-decoration:none;"><span class="logo-brand">edge</span><span class="logo-athletics">athletics</span><svg class="logo-graph" viewBox="0 0 50 35" fill="none"><polyline points="5,28 17,18 29,20 41,7" stroke="#18cb96" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5" cy="28" r="3" fill="#fff" stroke="#18cb96" stroke-width="2.5"/><circle cx="17" cy="18" r="3" fill="#fff" stroke="#18cb96" stroke-width="2.5"/><circle cx="29" cy="20" r="3" fill="#fff" stroke="#18cb96" stroke-width="2.5"/><circle cx="41" cy="7" r="3.5" fill="#18cb96" stroke="#18cb96" stroke-width="2.5"/></svg></a>
+          <p>Make performance measurable. Make progress visible. Make development smarter.</p>
+          <p class="footer-brand-vsp">Powered by <a href="https://vsptraining.com/" target="_blank" rel="noopener">Victory Sports Performance</a> &mdash; Northport, NY</p>
+        </div>
+        <div class="footer-col"><h4>Platform</h4><ul><li><a href="families.html">For Families</a></li><li><a href="trainers.html">For Trainers</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="dashboards.html">Dashboards</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="resources.html">Trainer Toolkit</a></li><li><a href="resources.html#families">Family Guide</a></li><li><a href="assessments.html">Assessments</a></li><li><a href="faq-new.html">FAQ</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="trust.html">Trust &amp; Safety</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="mailto:hello@trainwithedge.com">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Edge Athletics. All rights reserved.</p>
+        <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="trust.html">Trust &amp; Safety</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
