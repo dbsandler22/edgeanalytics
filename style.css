@@ -3152,7 +3152,7 @@ a.nav-portal:hover {
 }
 
 .dashboard-mock-body {
-  padding: 14px;
+  padding: 12px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -3171,7 +3171,7 @@ a.nav-portal:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 9px 12px;
+  padding: 8px 11px;
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius);
@@ -3349,7 +3349,7 @@ a.nav-portal:hover {
 }
 
 .dashboard-split-left {
-  flex: 0 0 48%;
+  flex: 0 0 45%;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -3541,8 +3541,7 @@ a.nav-portal:hover {
 
 .athlete-score-main,
 .athlete-score-badges,
-.athlete-radar-panel,
-.athlete-next-focus {
+.athlete-radar-panel {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 14px;
@@ -3550,6 +3549,9 @@ a.nav-portal:hover {
 
 .athlete-score-main {
   padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .athlete-score-kicker {
@@ -3559,6 +3561,7 @@ a.nav-portal:hover {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(24, 203, 150, 0.76);
+  margin-bottom: 10px;
 }
 
 .athlete-score-value {
@@ -3585,36 +3588,71 @@ a.nav-portal:hover {
   margin-top: 6px;
 }
 
-.athlete-score-flame {
+.athlete-score-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.athlete-score-action {
   display: inline-flex;
   align-items: center;
-  min-height: 28px;
-  font-size: 0.58rem;
+  justify-content: center;
+  min-height: 34px;
+  font-size: 0.57rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #f97316;
-  background: rgba(249, 115, 22, 0.1);
-  border: 1px solid rgba(249, 115, 22, 0.28);
-  border-radius: 999px;
-  padding: 5px 9px;
-  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 7px 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
-.athlete-score-subrow {
+.athlete-score-action-arrow {
+  margin-left: 6px;
+  font-size: 0.7rem;
+  line-height: 1;
+  opacity: 0.72;
+}
+
+.athlete-score-action.primary {
+  color: #07130f;
+  background: linear-gradient(180deg, rgba(36, 228, 168, 1) 0%, rgba(24, 203, 150, 0.92) 100%);
+  border-color: rgba(24, 203, 150, 0.24);
+  box-shadow: 0 10px 24px rgba(24, 203, 150, 0.18);
+}
+
+.athlete-score-badges {
+  padding: 14px;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px;
 }
 
-.athlete-score-gold,
-.athlete-score-context {
+.athlete-score-badges .athlete-score-kicker {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.athlete-score-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.athlete-score-status-badge {
   display: inline-flex;
   align-items: center;
   min-height: 24px;
-  font-size: 0.56rem;
+  font-size: 0.55rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3622,24 +3660,16 @@ a.nav-portal:hover {
   padding: 4px 8px;
 }
 
-.athlete-score-gold {
+.athlete-score-status-badge.gold {
   color: #f0b429;
   background: rgba(240, 180, 41, 0.1);
   border: 1px solid rgba(240, 180, 41, 0.28);
 }
 
-.athlete-score-context {
-  color: rgba(255, 255, 255, 0.64);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-}
-
-.athlete-score-badges {
-  padding: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 8px;
+.athlete-score-status-badge.flame {
+  color: #f97316;
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.28);
 }
 
 .athlete-score-pill {
@@ -3699,18 +3729,22 @@ a.nav-portal:hover {
 .athlete-dimension-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .athlete-dimension-row {
   display: grid;
-  grid-template-columns: 72px minmax(0, 1fr) 28px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 30px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "label value"
+    "bar bar";
   gap: 8px;
 }
 
-.athlete-dimension-row span {
-  font-size: 0.66rem;
+.athlete-dimension-label {
+  grid-area: label;
+  font-size: 0.6rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.68);
   letter-spacing: 0.05em;
@@ -3718,6 +3752,7 @@ a.nav-portal:hover {
 }
 
 .athlete-dimension-bar {
+  grid-area: bar;
   height: 5px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 999px;
@@ -3731,29 +3766,10 @@ a.nav-portal:hover {
 }
 
 .athlete-dimension-row strong {
+  grid-area: value;
   font-size: 0.72rem;
   color: #18cb96;
   text-align: right;
-}
-
-.athlete-next-focus {
-  padding: 14px;
-}
-
-.athlete-next-focus-label {
-  display: inline-block;
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(24, 203, 150, 0.76);
-}
-
-.athlete-next-focus p {
-  margin: 8px 0 0;
-  font-size: 0.76rem;
-  line-height: 1.65;
-  color: rgba(255, 255, 255, 0.66);
 }
 
 .athlete-training-strip {
@@ -3880,7 +3896,7 @@ a.nav-portal:hover {
     grid-template-columns: 1fr;
   }
   .athlete-dimension-row {
-    grid-template-columns: 64px minmax(0, 1fr) 24px;
+    grid-template-columns: minmax(0, 1fr) 26px;
   }
   .dashboard-radar {
     display: none;
