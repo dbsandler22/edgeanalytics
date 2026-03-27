@@ -1428,18 +1428,47 @@ a.nav-portal:hover {
 }
 
 .mission-proof-card {
+  position: relative;
   padding: 18px;
   border-radius: 18px;
   background: rgba(255,255,255,0.035);
   border: 1px solid rgba(255,255,255,0.08);
   min-height: 0;
-  text-align: center;
+  text-align: left;
   transition: background 0.25s, border-color 0.25s, transform 0.25s;
+}
+
+.mission-proof-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.14), rgba(255,255,255,0));
+}
+
+.mission-proof-card-problem::before {
+  background: linear-gradient(90deg, rgba(24,203,150,0.8), rgba(24,203,150,0.08));
+}
+
+.mission-proof-card-risk::before {
+  background: linear-gradient(90deg, rgba(24,203,150,0.72), rgba(24,203,150,0.07));
+}
+
+.mission-proof-card-accent::before {
+  background: linear-gradient(90deg, rgba(24,203,150,0.92), rgba(24,203,150,0.12));
 }
 
 .mission-proof-card-accent {
   background: linear-gradient(180deg, rgba(24,203,150,0.08), rgba(255,255,255,0.04));
   border-color: rgba(24,203,150,0.22);
+}
+
+.mission-proof-card-risk {
+  background: linear-gradient(180deg, rgba(24,203,150,0.045), rgba(255,255,255,0.03));
+  border-color: rgba(24,203,150,0.16);
 }
 
 .mission-proof-card:hover {
@@ -1460,7 +1489,7 @@ a.nav-portal:hover {
   justify-content: center;
   width: 34px;
   height: 34px;
-  margin: 0 auto 12px;
+  margin: 2px 0 14px;
   border-radius: 50%;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
@@ -1471,12 +1500,31 @@ a.nav-portal:hover {
   color: rgba(24,203,150,0.82);
 }
 
+.mission-proof-label {
+  margin: 0 0 10px;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.44);
+}
+
+.mission-proof-card-risk .mission-proof-label {
+  color: rgba(24,203,150,0.6);
+}
+
+.mission-proof-card-accent .mission-proof-label,
+.mission-proof-card-problem .mission-proof-label {
+  color: rgba(24,203,150,0.7);
+}
+
 .mission-proof-title {
   margin: 0 0 8px;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   font-weight: 700;
   line-height: 1.45;
   color: var(--white);
+  max-width: 18ch;
 }
 
 .mission-proof-text {
@@ -1484,6 +1532,7 @@ a.nav-portal:hover {
   font-size: 0.82rem;
   line-height: 1.65;
   color: rgba(255,255,255,0.58);
+  max-width: 28ch;
 }
 
 .mission-proof-source {
